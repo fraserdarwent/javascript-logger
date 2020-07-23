@@ -136,14 +136,27 @@ tests.push(function levelTest() {
 
   log.setLevel(log.levels.INFO);
 
-  // run a lower level
   log.debug("foo");
 
   // restore stderr
   inspect.restore();
 
   // assert result
-  return inspect.output.length == 1;
+  if (inspect.output.length != 0) {
+    return false;
+  }
+
+  log.setLevel(log.levels.DEBUG);
+  inspect = stdout.inspect();
+
+  log.debug("foo");
+
+  inspect.restore();
+
+  const regex = /^(.*)(\[DEBUG\] foo\n$)/;
+
+  // assert result
+  return regex.test(inspect.output[0]);
 });
 
 tests.forEach((test) => {

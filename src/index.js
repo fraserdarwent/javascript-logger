@@ -69,7 +69,6 @@ exports.setLevel = function (newLevel) {
     error(exports.levels.ERROR, `Log level ${newLevel} is not valid`);
   } else {
     level = newLevel;
-    log(exports.levels.INFO, "Updated log level");
   }
 };
 

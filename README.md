@@ -7,7 +7,7 @@ A simple Javascript level based logging library
 ### Import
 
 ```javascript
-const log = require("node-log-simple");
+const log = require("@fraserdarwent/javascript-logger");
 ```
 
 ### Usage

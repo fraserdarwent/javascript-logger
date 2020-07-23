@@ -1,6 +1,6 @@
 {
   "name": "@fraserdarwent/javascript-logger",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple level based logging library",
   "main": "src/index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fraserdarwent/node-log-simple.git"
+    "url": "git+https://github.com/fraserdarwent/@fraserdarwent/javascript-logger.git"
   },
   "keywords": [
     "log",
@@ -24,9 +24,9 @@
   "author": "Fraser Darwent",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fraserdarwent/node-log-simple/issues"
+    "url": "https://github.com/fraserdarwent/@fraserdarwent/javascript-logger/issues"
   },
-  "homepage": "https://github.com/fraserdarwent/node-log-simple#readme",
+  "homepage": "https://github.com/fraserdarwent/@fraserdarwent/javascript-logger#readme",
   "devDependencies": {
     "test-console": "^1.1.0"
   }
