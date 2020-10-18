@@ -2,12 +2,12 @@ const stdout = console.log;
 const stderr = console.error;
 
 const prefixes = {
-  0: "FATAL",
-  1: "ERROR",
-  2: "WARN",
-  3: "INFO",
-  4: "DEBUG",
-  5: "TRACE",
+  0: 'FATAL',
+  1: 'ERROR',
+  2: 'WARN',
+  3: 'INFO',
+  4: 'DEBUG',
+  5: 'TRACE',
 };
 
 const levels = {

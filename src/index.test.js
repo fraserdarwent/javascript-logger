@@ -1,7 +1,7 @@
-const log = require("./index");
-const assert = require("assert");
+const log = require('./index');
+const assert = require('assert');
 
-const { stdout, stderr } = require("test-console");
+const {stdout, stderr} = require('test-console');
 let tests = [];
 
 log.setLevel(log.levels.TRACE);
@@ -11,7 +11,7 @@ tests.push(function traceTest() {
   let inspect = stdout.inspect();
 
   // run function being tested
-  log.trace("foo");
+  log.trace('foo');
 
   // restore stdout
   inspect.restore();
@@ -27,7 +27,7 @@ tests.push(function debugTest() {
   let inspect = stdout.inspect();
 
   // run function being tested
-  log.debug("foo");
+  log.debug('foo');
 
   // restore stdout
   inspect.restore();
@@ -43,7 +43,7 @@ tests.push(function infoTest() {
   let inspect = stdout.inspect();
 
   // run function being tested
-  log.info("foo");
+  log.info('foo');
 
   // restore stdout
   inspect.restore();
@@ -59,7 +59,7 @@ tests.push(function warnTest() {
   let inspect = stdout.inspect();
 
   // run function being tested
-  log.warn("foo");
+  log.warn('foo');
 
   // restore stdout
   inspect.restore();
@@ -75,7 +75,7 @@ tests.push(function errorTest() {
   let inspect = stderr.inspect();
 
   // run function being tested
-  log.error("foo");
+  log.error('foo');
 
   // restore stderr
   inspect.restore();
@@ -97,7 +97,7 @@ tests.push(function fatalTest() {
   let inspect = stderr.inspect();
 
   // run function being tested
-  log.fatal("foo");
+  log.fatal('foo');
 
   // restore stderr
   inspect.restore();
@@ -136,7 +136,7 @@ tests.push(function levelTest() {
 
   log.setLevel(log.levels.INFO);
 
-  log.debug("foo");
+  log.debug('foo');
 
   // restore stderr
   inspect.restore();
@@ -149,7 +149,7 @@ tests.push(function levelTest() {
   log.setLevel(log.levels.DEBUG);
   inspect = stdout.inspect();
 
-  log.debug("foo");
+  log.debug('foo');
 
   inspect.restore();
 
@@ -159,6 +159,6 @@ tests.push(function levelTest() {
   return regex.test(inspect.output[0]);
 });
 
-tests.forEach((test) => {
-  console.log(`${test() ? "PASS" : "FAIL"}: ${test.name}`);
+tests.forEach(test => {
+  console.log(`${test() ? 'PASS' : 'FAIL'}: ${test.name}`);
 });
