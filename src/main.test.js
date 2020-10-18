@@ -1,7 +1,7 @@
-const log = require('./index');
+const log = require('./main.js');
 const assert = require('assert');
 
-const {stdout, stderr} = require('test-console');
+const { stdout, stderr } = require('test-console');
 let tests = [];
 
 log.setLevel(log.levels.TRACE);
@@ -159,6 +159,10 @@ tests.push(function levelTest() {
   return regex.test(inspect.output[0]);
 });
 
+<<<<<<< HEAD:src/main.test.js
+tests.forEach((test) => {
+=======
 tests.forEach(test => {
+>>>>>>> origin/master:src/index.test.js
   console.log(`${test() ? 'PASS' : 'FAIL'}: ${test.name}`);
 });

@@ -1,10 +1,10 @@
 {
   "name": "@fraserdarwent/javascript-logger",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Simple level based logging library",
-  "main": "src/index.js",
+  "main": "src/main.js",
   "scripts": {
-    "test": "node src/index.test.js",
+    "test": "node src/main.test.js",
     "release": "npm test && npm publish"
   },
   "repository": {
