@@ -1,6 +1,6 @@
 {
   "name": "@fraserdarwent/javascript-logger",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Simple level based logging library",
   "main": "src/main.js",
   "scripts": {
@@ -28,6 +28,9 @@
   },
   "homepage": "https://github.com/fraserdarwent/@fraserdarwent/javascript-logger#readme",
   "devDependencies": {
-    "test-console": "^1.1.0"
-  }
+    "test-console": "^1.1.0",
+    "prettier": "^2.1.2",
+    "prettier-airbnb-config": "^1.0.0"
+  },
+  "dependencies": {}
 }

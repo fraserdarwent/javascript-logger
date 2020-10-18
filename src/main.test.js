@@ -159,6 +159,10 @@ tests.push(function levelTest() {
   return regex.test(inspect.output[0]);
 });
 
+<<<<<<< HEAD:src/main.test.js
 tests.forEach((test) => {
+=======
+tests.forEach(test => {
+>>>>>>> origin/master:src/index.test.js
   console.log(`${test() ? 'PASS' : 'FAIL'}: ${test.name}`);
 });
